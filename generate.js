@@ -1,18 +1,18 @@
 module.exports = function () {
     const { faker } = require("@faker-js/faker/locale/en")
-    var _ = require("lodash")
-    var matricNos = [];
-    var matricDepts = ["SCI", "HUM", "LAW", "CHS", "ENG", "MATH", "PHY", "BIO", "CHM", "ECO", "SOC"];
+    const _ = require("lodash")
+    const matricNos = [];
+    const matricDepts = ["SCI", "HUM", "LAW", "CHS", "ENG", "MATH", "PHY", "BIO", "CHM", "ECO", "SOC"];
     _.times(1000, function (n) {
-        var matricDept = faker.helpers.arrayElement(matricDepts)
-        var matricCode = faker.mersenne.rand(18700, 16100)
-        var matricYear = "016"
+        const matricDept = faker.helpers.arrayElement(matricDepts)
+        const matricCode = faker.mersenne.rand(18700, 16100)
+        let matricYear = "016"
         if (matricCode > 16999 && matricCode < 18000) {
             matricYear = "017"
         } else if (matricCode >= 18000) {
             matricYear = "018"
         }
-        var matricNo = `${matricDept}/${matricYear}/${matricCode}`
+        const matricNo = `${matricDept}/${matricYear}/${matricCode}`
         matricNos.push(matricNo)
     })
     return {
@@ -87,7 +87,8 @@ module.exports = function () {
                 "name": "Economics",
                 "id": 10
             }
-        ], "courses": [
+        ],
+        "courses": [
             {
                 "name": "Computer networks and communication",
                 "id": 1,
