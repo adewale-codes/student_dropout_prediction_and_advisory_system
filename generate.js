@@ -23,7 +23,7 @@ module.exports = function () {
                 last_name: faker.name.lastName(),
                 matric_no: faker.helpers.arrayElement(matricNos),
                 avatar: faker.internet.avatar(),
-                cgpa: faker.datatype.float({ min: 1, max: 5, precision: 0.1 }).toFixed(2),
+                cgpa: faker.datatype.float({ min: 0.5, max: 5, precision: 0.1 }).toFixed(2),
             }
         }),
         results: _.times(10000, function (n) {
@@ -43,7 +43,7 @@ module.exports = function () {
                 matric_no: faker.helpers.arrayElement(matricNos),
                 department_id: faker.mersenne.rand(1, 97),
                 session_id: faker.mersenne.rand(1, 15),
-                gpa: faker.datatype.float({ min: 1, max: 5, precision: 0.01 }).toFixed(2),
+                gpa: faker.datatype.float({ min: 0.5, max: 5, precision: 0.01 }).toFixed(2),
             }
         }),
         "departments": [
