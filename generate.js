@@ -577,72 +577,72 @@ module.exports = function () {
                 "session": "2016/2017"
             },
             {
-                "id": 1,
+                "id": 2,
                 "semester_name": "2nd semester",
                 "session": "2016/2017"
             },
             {
-                "id": 1,
+                "id": 3,
                 "semester_name": "ERP",
                 "session": "2016/2017"
             },
             {
-                "id": 2,
-                "semester_name": "1st semester",
-                "session": "2017/2018"
-            },
-            {
-                "id": 2,
-                "semester_name": "2nd semester",
-                "session": "2017/2018"
-            },
-            {
-                "id": 2,
-                "semester_name": "ERP",
-                "session": "2017/2018"
-            },
-            {
-                "id": 3,
-                "semester_name": "1st semester",
-                "session": "2018/2019"
-            },
-            {
-                "id": 3,
-                "semester_name": "2nd semester",
-                "session": "2018/2019"
-            },
-            {
-                "id": 3,
-                "semester_name": "ERP",
-                "session": "2018/2019"
-            },
-            {
                 "id": 4,
                 "semester_name": "1st semester",
-                "session": "2019/2020"
-            },
-            {
-                "id": 4,
-                "semester_name": "2nd semester",
-                "session": "2019/2020"
-            },
-            {
-                "id": 4,
-                "semester_name": "ERP",
-                "session": "2019/2020"
+                "session": "2017/2018"
             },
             {
                 "id": 5,
+                "semester_name": "2nd semester",
+                "session": "2017/2018"
+            },
+            {
+                "id": 6,
+                "semester_name": "ERP",
+                "session": "2017/2018"
+            },
+            {
+                "id": 7,
+                "semester_name": "1st semester",
+                "session": "2018/2019"
+            },
+            {
+                "id": 8,
+                "semester_name": "2nd semester",
+                "session": "2018/2019"
+            },
+            {
+                "id": 9,
+                "semester_name": "ERP",
+                "session": "2018/2019"
+            },
+            {
+                "id": 10,
+                "semester_name": "1st semester",
+                "session": "2019/2020"
+            },
+            {
+                "id": 11,
+                "semester_name": "2nd semester",
+                "session": "2019/2020"
+            },
+            {
+                "id": 12,
+                "semester_name": "ERP",
+                "session": "2019/2020"
+            },
+            {
+                "id": 13,
                 "semester_name": "1st semester",
                 "session": "2020/2021"
             },
             {
-                "id": 5,
+                "id": 14,
                 "semester_name": "2nd semester",
                 "session": "2020/2021"
             },
             {
-                "id": 5,
+                "id": 15,
                 "semester_name": "ERP",
                 "session": "2020/2021"
             }
