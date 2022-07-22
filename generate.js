@@ -15,15 +15,26 @@ module.exports = function () {
         const matricNo = `${matricDept}/${matricYear}/${matricCode}`
         matricNos.push(matricNo)
     })
+    const getLevel = (mat) => {
+        const slashIndex = mat.indexOf("/") + 1
+        const yearCode = mat.substr(slashIndex, 3)
+        const year = Number(`2${yearCode}`)
+        const diff = (new Date().getFullYear() - year) + 1;
+        const level = Number(`${diff}00`)
+        return level;
+    }
     return {
         students: _.times(1000, function (n) {
+            const matNo = faker.helpers.arrayElement(matricNos)
             return {
                 id: n + 1,
                 first_name: faker.name.firstName(),
                 last_name: faker.name.lastName(),
-                matric_no: faker.helpers.arrayElement(matricNos),
+                matric_no: matNo,
                 avatar: faker.internet.avatar(),
                 cgpa: faker.datatype.float({ min: 0.5, max: 5, precision: 0.1 }).toFixed(2),
+                department_id: faker.mersenne.rand(1, 97),
+                level: getLevel(matNo),
             }
         }),
         results: _.times(10000, function (n) {
