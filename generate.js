@@ -33,7 +33,7 @@ module.exports = function () {
                 matric_no: matNo,
                 avatar: faker.internet.avatar(),
                 cgpa: faker.datatype.float({ min: 0.5, max: 5, precision: 0.1 }).toFixed(2),
-                department_id: faker.mersenne.rand(1, 97),
+                department_id: faker.mersenne.rand(1, 10),
                 level: getLevel(matNo),
             }
         }),
@@ -42,7 +42,7 @@ module.exports = function () {
                 id: n + 1,
                 matric_no: faker.helpers.arrayElement(matricNos),
                 course_id: faker.mersenne.rand(1, 97),
-                department_id: faker.mersenne.rand(1, 97),
+                department_id: faker.mersenne.rand(1, 10),
                 level: faker.mersenne.rand(100, 400),
                 session_id: faker.mersenne.rand(1, 15),
                 score: faker.mersenne.rand(30, 100)
@@ -52,7 +52,7 @@ module.exports = function () {
             return {
                 id: n + 1,
                 matric_no: faker.helpers.arrayElement(matricNos),
-                department_id: faker.mersenne.rand(1, 97),
+                department_id: faker.mersenne.rand(1, 10),
                 session_id: faker.mersenne.rand(1, 15),
                 gpa: faker.datatype.float({ min: 0.5, max: 5, precision: 0.01 }).toFixed(2),
             }
